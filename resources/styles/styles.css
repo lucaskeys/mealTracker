@@ -1,0 +1,52 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  background-color: #F5F5F5;
+}
+
+.container {
+  margin-bottom: 50px;
+}
+
+.jumbotron {
+  background-color: #009688;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.Jumbotron h1 {
+  font-family: 'Amatic SC';
+  color: white;
+  font-size: 100px;
+  text-align: center;
+  position: relative;
+}
+
+.jumbotron h4 {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  font-size: 25px;
+  text-align: center;
+}
+
+.filter {
+  margin-bottom: 30px;
+}
+
+thead.table-titles {
+  font-size: 18px;
+}
+
+.user-meal {
+  width: 100%;
+}
+
+.user-calories {
+  width: 70px;
+  text-align: center;
+}
+
+.log-edit {
+  margin-bottom: 40px;
+}

@@ -4,22 +4,22 @@ import { Log } from './log.model';
 @Component({
   selector: 'edit-log',
   template: `
-  <div>
+  <div class="log-edit">
     <div *ngIf="childLogSelected">
     <h3>Change Log (Come'on...Done lie to me!)</h3>
     <div class="form-group">
       <label>Meal</label>
-      <input [(ngModel)]="childLogSelected.meal">
+      <input class="user-meal" [(ngModel)]="childLogSelected.meal">
     </div>
     <div class="form-group">
       <label>Details</label>
-      <input [(ngModel)]="childLogSelected.details">
+      <textarea class="form-control" rows="3" [(ngModel)]="childLogSelected.details"></textarea>
     </div>
     <div class="form-group">
       <label>Calorie Count</label>
-      <input [(ngModel)]="childLogSelected.calories">
+      <input class="user-calories" [(ngModel)]="childLogSelected.calories">
     </div>
-    <button (click)="doneEditing()">Done</button>
+    <button class="edit-button" (click)="doneEditing()">Done</button>
     </div>
   </div>
   `

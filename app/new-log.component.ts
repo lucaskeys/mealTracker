@@ -5,18 +5,18 @@ import { Log } from './log.model';
   selector: 'new-log',
   template: `
   <div class="container">
-    <h1>What did you eat?</h1>
+    <h3>What did you eat?</h3>
     <div class="form-group">
      <label>Meal</label>
-     <input #newMeal>
+     <input class="user-meal" #newMeal>
    </div>
    <div class="form-group">
      <label>Thoughts?</label>
-     <input #newDetails>
+     <textarea class="form-control" rows="3" #newDetails></textarea>
    </div>
    <div class="form-group">
      <label>How many calories?</label>
-     <input #newCalories>
+     <input class="user-calories" #newCalories>
    </div>
    <button class="add-button" (click)="createLog(newMeal.value, newDetails.value, newCalories.value)">Add to your logs</button>
    </div>

@@ -5,7 +5,10 @@ import { Log } from './log.model';
     selector: 'app-root',
     template: `
     <div class="container">
-      <h1>Oops I ate it again!</h1>
+      <div class="jumbotron">
+        <h1>Oops I Ate it Again!</h1>
+        <h4>The Ultimate Meal Log</h4>
+      </div>
       <log-list [childLogList]="myLogList" (clickSender)="editLog($event)"></log-list>
       <edit-log [childLogSelected]="currentLog" (doneEditingSender)="editDone()"></edit-log>
       <new-log (createLogSender)="createLog($event)"></new-log>
@@ -23,8 +26,8 @@ export class AppComponent {
   ];
 
   healthyOrNnot(caloriesPerMeal: Log) {
-    if(caloriesPerMeal.calories > 500) {
-      return caloriesPerMeal.highCalorie = true;
+    if(caloriesPerMeal.calories < 500) {
+      return caloriesPerMeal.lowCalorie = true;
     } else {
       return caloriesPerMeal.lowCalorie = true;
     }
