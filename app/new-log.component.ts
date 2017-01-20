@@ -18,7 +18,7 @@ import { Log } from './log.model';
      <label>How many calories?</label>
      <input class="user-calories" #newCalories>
    </div>
-   <button class="add-button" (click)="createLog(newMeal.value, newDetails.value, newCalories.value)">Add to your logs</button>
+   <button class="add-button btn btn-default" (click)="createLog(newMeal.value, newDetails.value, newCalories.value)">Add to your logs</button>
    </div>
   `
 })

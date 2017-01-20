@@ -12,7 +12,7 @@ import { Log } from './log.model';
       <option value="lowCalorieMeal">What you should be eating!</option>
   </select>
   <table class="table">
-    <caption>My Logs</caption>
+    <caption class="table-cap"><h3>My Logs</h3></caption>
     <thead class="table-titles">
       <th>Meal</th>
       <th>Meal Thoughts</th>
@@ -24,8 +24,8 @@ import { Log } from './log.model';
       <td>{{log.meal}}</td>
       <td>{{log.details}}</td>
       {{isItHealthy(log)}}
-      <td>{{log.calories}}</td>
-      <td><button (click)="editButton(log)">Edit Log</button></td>
+      <td><span [class]="highCalorieMeal(log)"></span>{{log.calories}} cal</td>
+      <td><button class="btn btn-default" (click)="editButton(log)">Edit Log</button></td>
       </tr>
       </tbody>
   </table>
@@ -53,5 +53,13 @@ export class LogListComponent {
 
     editButton(logEdit: Log) {
         this.clickSender.emit(logEdit);
+    }
+
+    highCalorieMeal(meal: Log) {
+        if (meal.calories > 500) {
+            return "glyphicon glyphicon-remove";
+        } else {
+            return "glyphicon glyphicon-leaf";
+        }
     }
 }

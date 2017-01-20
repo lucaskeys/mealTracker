@@ -19,7 +19,7 @@ import { Log } from './log.model';
       <label>Calorie Count</label>
       <input class="user-calories" [(ngModel)]="childLogSelected.calories">
     </div>
-    <button class="edit-button" (click)="doneEditing()">Done</button>
+    <button class="edit-button btn btn-default" (click)="doneEditing()">Done</button>
     </div>
   </div>
   `
