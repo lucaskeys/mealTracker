@@ -6,8 +6,7 @@ import { Log } from './log.model';
   template: `
   <div>
     <div *ngIf="childLogSelected">
-    <h4>{{childLogSelected.meal}}</h4>
-    <h3>Change Previous Log</h3>
+    <h3>Change Log (Come'on...Done lie to me!)</h3>
     <div class="form-group">
       <label>Meal</label>
       <input [(ngModel)]="childLogSelected.meal">

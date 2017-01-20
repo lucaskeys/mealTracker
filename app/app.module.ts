@@ -5,12 +5,12 @@ import { FormsModule }  from '@angular/forms';
 import { LogListComponent } from './log-list.component';
 import { EditLogComponent } from  './edit-log.component';
 import { NewLogComponent } from './new-log.component';
-
+import { CaloriesPipe } from './calories.pipe';
 
 @NgModule({
     imports: [BrowserModule,
     FormsModule],
-    declarations: [AppComponent, LogListComponent, EditLogComponent, NewLogComponent],
+    declarations: [AppComponent, LogListComponent, EditLogComponent, NewLogComponent, CaloriesPipe],
     bootstrap: [AppComponent]
 })
 
