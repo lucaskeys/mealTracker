@@ -25,7 +25,7 @@ export class AppComponent {
     new Log("Tilapia", "Finally a healthy choice I like", 240),
     new Log("Salad", "I starting to get better", 240),
     new Log("Lasanga", "I cant stay away from Italian food", 450),
-    new Log("Ice Cream", "Nothing wrong with a guilty pleasure here and there", 240),
+    new Log("Soup", "Homemade lentil soup", 240),
     new Log("Homemade Turkey Burger", "Cooking at home is helping me eat healhier", 400),
     new Log("Burritos", "Maybe not the best thing for me", 650),
     new Log("Chicken and Rice", "Couldnt be more bland", 440)

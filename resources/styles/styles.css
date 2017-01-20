@@ -59,23 +59,36 @@ thead th {
 
 .table-cap {
   margin-bottom: 10px;
-  color: black;
+  color: #616161;
 }
 
 input.user-calories {
   margin-left: 15px;
 }
 
+.calories-col {
+  padding-right: 30px;
+}
+
+.edit-col {
+  padding-left: 30px;
+}
 
 .glyphicon {
   font-size: 22px;
-  padding-right: 10px;
+  padding-right: 20px;
+  padding-top: 5px;
 }
 
-.glyphicon-heart {
+.glyphicon-remove {
   color: #DD2C00;
 }
 
 .glyphicon-leaf {
   color: #00E676;
+}
+
+.table-titles th {
+  padding-left: 5px;
+  color: #424242;
 }
