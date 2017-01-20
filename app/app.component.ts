@@ -6,7 +6,9 @@ import { Log } from './log.model';
     template: `
     <div class="container">
       <h1>Oops I ate it again!</h1>
-      <log-list [childLogList]="myLogList"></log-list>
+      <log-list [childLogList]="myLogList" (clickSender)="($event)"></log-list>
+      <edit-log [childLogSelected]="currentLog" (doneEditingSender)="editDone()"></edit-log>
+      <new-log></new-log>
     </div>
   `
 })
