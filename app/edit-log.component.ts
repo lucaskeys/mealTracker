@@ -8,12 +8,5 @@ template: `
 
 
 
-
 `
-
 })
-
-
-export class EditLogComponent {
-
-}
