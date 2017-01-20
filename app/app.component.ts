@@ -22,4 +22,12 @@ export class AppComponent {
   editLog(currentLog) {
     this.currentMeal = currentLog;
   }
+
+  editDone() {
+    this.currentMeal = null;
+  }
+
+  createLog() {
+    
+  }
 }
