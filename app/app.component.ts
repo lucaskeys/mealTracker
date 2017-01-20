@@ -8,7 +8,7 @@ import { Log } from './log.model';
       <h1>Oops I ate it again!</h1>
       <log-list [childLogList]="myLogList" (clickSender)="($event)"></log-list>
       <edit-log [childLogSelected]="currentLog" (doneEditingSender)="editDone()"></edit-log>
-      <new-log></new-log>
+      <new-log (createLogSender)="createLog($event)"></new-log>
     </div>
   `
 })
@@ -30,7 +30,7 @@ export class AppComponent {
     this.currentLog = null;
   }
 
-  createLog() {
-
+  createLog(newLog: Log) {
+    this.myLogList.push(newLog);
   }
 }
