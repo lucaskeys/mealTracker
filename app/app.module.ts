@@ -6,10 +6,11 @@ import { LogListComponent } from './log-list.component';
 import { EditLogComponent } from  './edit-log.component';
 import { NewLogComponent } from './new-log.component';
 
+
 @NgModule({
     imports: [BrowserModule,
     FormsModule],
-    declarations: [AppComponent, LogListComponent, EditLogComponent, NewLogComponent, CaloriesPipe],
+    declarations: [AppComponent, LogListComponent, EditLogComponent, NewLogComponent],
     bootstrap: [AppComponent]
 })
 
